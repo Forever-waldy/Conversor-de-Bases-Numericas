@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Bases Numéricas</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="https://geografesron.files.wordpress.com/2016/08/virtual-informacional.gif" type="image/gif" />
+</head>
+<body>
+<h2 class="container-titulo">Conversor de Bases Numéricas</h2>
+
+<div class="container">
+    <div class="input-group">
+        <label class="nome" for="decimalInput">Decimal:</label>
+        <input type="number" id="decimalInput" oninput="convertDecimal()">
+    </div>
+    <div class="input-group">
+        <label class="nome"  for="binaryInput">Binário:</label>
+        <input type="number" id="binaryInput" oninput="convertBinary()">
+    </div>
+    <div class="input-group">
+        <label class="nome"  for="octalInput">Octal:</label>
+        <input type="number" id="octalInput" oninput="convertOctal()">
+    </div>
+    <div class="input-group">
+        <label class="nome"  for="hexadecimalInput">Hexadecimal:</label>
+        <input type="text" id="hexadecimalInput" oninput="convertHexadecimal()">
+    </div>
+    <div class="buttons-container">
+    <button class="button button1"  onclick="clearInputs()">Limpar</button>
+    </div>
+    <p>Feito por Forever</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
